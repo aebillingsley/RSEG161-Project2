@@ -21,8 +21,7 @@ console.log("1. Define the average1 arrow function as the sum of five ",
 
 var average1 = (a, b, c, d, e) =>
 {
-    var varOutput = (a + b + c + d + e)/5;
-    return varOutput;
+    return (a + b + c + d + e)/5;
 }
 
 console.log("average1(1, 2, 3, 5, 8): ", average1(1, 2, 3, 8, 8));
@@ -41,8 +40,7 @@ console.log("2. Define the average2 arrow function, that is different ",
 
 var average2 = (a, b, c, d, e = d) =>
 {
-    var varOutput = (a + b + c + d + e)/5;
-    return varOutput;
+    return (a + b + c + d + e)/5;
 }
 
 console.log("average2(1, 2, 3, 5): ", average2(1, 2, 3, 5));
@@ -62,8 +60,7 @@ console.log("3. Define the average3 arrow function, that is different ",
 
 var average3 = (a, b, c, d = 4, e = d) =>
 {
-    var varOutput = (a + b + c + d + e)/5;
-    return varOutput;
+    return (a + b + c + d + e)/5;
 }
 
 console.log("average3(1, 2, 3): ", average3(1, 2, 3));
@@ -82,8 +79,7 @@ console.log("4. Define the average4 arrow function, that is different ",
 
 var average4 = (a, b, c, d = 4, e) =>
 {
-    var varOutput = (a + b + c + d + e)/5;
-    return varOutput;
+    return (a + b + c + d + e)/5;
 }
 
 console.log("average4(1, 2, 7, 9): ", average4(1, 2, 7, 9));

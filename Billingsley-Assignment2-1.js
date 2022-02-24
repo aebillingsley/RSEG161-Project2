@@ -14,14 +14,12 @@ console.log("1. Write a function calculating the average of squares of ",
             "four input arguments."); 
 var averageOfSquares = (a, b, c, d) =>
 {
-    var varOutput = ((Math.pow(a, 2) + Math.pow(b, 2) + 
-                      Math.pow(c, 2) + Math.pow(d, 2)) / 4);
-    var logOutput = `averageOfSquares(${a}, ${b}, ${c}, ${d}): ${varOutput}`;    
-    return logOutput;
+    return ((Math.pow(a, 2) + Math.pow(b, 2) + 
+             Math.pow(c, 2) + Math.pow(d, 2)) / 4);
 }
 
-console.log(averageOfSquares(1, 2, 3, 4));
-console.log(averageOfSquares(5, 6, 7, 8));
+console.log("averageOfSquares(1, 2, 3, 4): ", averageOfSquares(1, 2, 3, 4));
+console.log("averageOfSquares(5, 6, 7, 8): ", averageOfSquares(5, 6, 7, 8));
 
 
 // --------------------------------------------------------------------------
@@ -31,13 +29,11 @@ console.log("");
 console.log("2. Write a function dividing a single parameter by 2.");
 var divideBy2 = param => 
 {
-    var varOutput = (param / 2);
-    var logOutput = `divideBy2(${param}): ${varOutput}`;    
-    return logOutput;
+    return (param / 2);
 }
 
-console.log(divideBy2(42));
-console.log(divideBy2(78));
+console.log("divideBy2(42): ", divideBy2(42));
+console.log("divideBy2(78): ", divideBy2(78));
 
 // --------------------------------------------------------------------------
 // 3. Use empty parentheses if no input parameter: get random number
@@ -78,12 +74,11 @@ var indexOf = ([...numArray], numFind) =>
         }
     }
     
-    var logOutput = `indexOf([${numArray}], ${numFind}): ${indexVal}`;  
-    return logOutput;
+    return indexVal;
 }
 
-console.log(indexOf([1, 2, 3, 4, 5], 3));
-console.log(indexOf([6, 7, 8, 9], 9));
+console.log("indexOf([1, 2, 3, 4, 5], 3): ", indexOf([1, 2, 3, 4, 5], 3));
+console.log("indexOf([6, 7, 8, 9],    9): ", indexOf([6, 7, 8, 9], 9));
 
 // --------------------------------------------------------------------------
 // 5. Convenient to use braces if an arrow function has several lines: 
@@ -94,13 +89,11 @@ console.log("5. Convenient to use braces if an arrow function has several ",
             "and return it.");
 var hypothenuseLength = (leg1, leg2) =>
 {
-    var hypoVal = Math.sqrt(Math.pow(leg1,2) + Math.pow(leg2,2));
-    var logOutput = `hypothenuseLength(${leg1}, ${leg2}): ${hypoVal}`;    
-    return logOutput;
+    return Math.sqrt(Math.pow(leg1,2) + Math.pow(leg2,2));
 }
 
-console.log(hypothenuseLength(3, 4));
-console.log(hypothenuseLength(5, 12));
+console.log("hypothenuseLength(3,  4): ", hypothenuseLength(3, 4));
+console.log("hypothenuseLength(5, 12): ", hypothenuseLength(5, 12));
 
 // --------------------------------------------------------------------------
 // 6. Parentheses needed to return an object literal: for two input numbers 
